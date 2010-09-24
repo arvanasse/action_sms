@@ -5,13 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "action_sms"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Send SMS messages using the Mail gem.}
+    gem.description = %Q{Send SMS messages using the Mail gem.}
     gem.email = "andyvanasse@gmail.com"
     gem.homepage = "http://github.com/arvanasse/action_sms"
     gem.authors = ["arvanasse"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "mail", ">= 2.1.3"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
